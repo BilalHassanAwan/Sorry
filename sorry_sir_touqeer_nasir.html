@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorry Sir Touqeer Nasir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+      background: black;
+      color: #fff;
+    }
+
+    .cable-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .cable {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      border-top: 5px solid #0ff;
+      animation: spin 20s linear infinite;
+      filter: drop-shadow(0 0 20px #0ff);
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .content h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 4em;
+      color: #0ff;
+      text-shadow: 0 0 20px #0ff;
+      margin-bottom: 0.2em;
+    }
+
+    .content p {
+      font-size: 1.4em;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .glow-btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1.2em;
+      color: #0ff;
+      border: 2px solid #0ff;
+      background: transparent;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.4s;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .glow-btn:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="cable-container">
+    <div class="cable"></div>
+  </div>
+
+  <div class="content">
+    <h1>I'm Sorry Sir Touqeer Nasir</h1>
+    <p>
+      Meri taraf se agar koi baat ya ghalti aapko takleef pohncha gayi ho, tou dil se maafi chahta hoon... 
+      Aap mere mentor hain, aur mujhe har lafz ka ehtram hai. 
+      Sirf aapki muskurahat meri khushi hai...
+    </p>
+    <button class="glow-btn">Please Forgive Me</button>
+  </div>
+</body>
+</html>
